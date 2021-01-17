@@ -9,6 +9,8 @@ python --pred prediction.txt --src "robust_nli.txt"
 
 'prediction.txt' is the model output file, with label 'entailment'/'contradiction'/'neutral'. One label per line is the model prediction for corresponding instance in 'robust_nli.txt'. 'random_prediction.txt' is a random prediction output.
 
+The benchmark dataset 'robust_nli.txt' is also available on [Google Drive](https://drive.google.com/file/d/1-domFwWuBXEXmmOZ64MHVDxaAkmhOY21/view?usp=sharing).
+
 For details of the benchmark adversarial datasets, please to refer to [our paper](https://www.aclweb.org/anthology/2020.conll-1.48.pdf).
 
 ## Results
