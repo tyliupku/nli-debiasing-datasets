@@ -25,7 +25,7 @@ For details of the benchmark adversarial datasets, please to refer to [our paper
 
 ## Citation
 
-If you use our NLI debiasing method, please consider citing our work:
+If you use the data resource in this repo, please consider citing our work:
 
 ```
 @inproceedings{liu-etal-2020-empirical,
