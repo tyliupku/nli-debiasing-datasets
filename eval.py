@@ -42,7 +42,10 @@ def eval(pred_path, src_path):
     for split in all_dataset:
         split_true[split] /= (split_len[split]+eps)
         print("{} : {}".format(split, split_true[split]))
-    print("\nAvg : {}".format(np.mean(list(split_true.values()))))
+    st_mean = np.mean([split_true["ST_LM"], split_true["ST_NE"], split_true["ST_SE"], split_true["ST_WO"]])
+    avg = np.mean([st_mean, split_true["IS_CS"], split_true["LI_LI"], split_true["PI_CD"], split_true["PI_SP"],
+                   split_true["IS_SD"], split_true["LI_TS"]])
+    print("\nAvg : {}".format(avg))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
